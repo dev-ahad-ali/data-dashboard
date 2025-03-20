@@ -1,0 +1,18 @@
+.dropdown-menu{
+    --#{$prefix}dropdown-bg: var(--dropdown-bg);
+    --#{$prefix}dropdown-link-hover-bg: var(--dropdown-link-hover-bg);
+    --#{$prefix}dropdown-link-active-bg: var(--dropdown-link-active-bg);
+    --#{$prefix}dropdown-border-color: var(--dropdown-border-color);
+    --#{$prefix}dropdown-divider-bg: var(--dropdown-border-color);
+    --#{$prefix}dropdown-min-width: #{$sizes-3xs};
+    --#{$prefix}dropdown-font-size: #{$fontSizes-sm};
+    --#{$prefix}dropdown-box-shadow: #{$shadows-dark-lg};
+    --#{$prefix}dropdown-item-padding-x: #{$space-3};
+    --#{$prefix}dropdown-item-padding-y: #{$space-1-5};
+    margin-top: $space-1-5 !important;
+}
+.dropdown-toggle{
+    --#{$prefix}btn-active-bg: var(--avatar-btn-active-bg);
+    --#{$prefix}btn-active-border-color: var(--avatar-btn-active-border-color);
+    border-radius: $radius-md;
+}

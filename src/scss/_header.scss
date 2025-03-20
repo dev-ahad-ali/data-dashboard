@@ -1,0 +1,29 @@
+
+/* Header area */
+
+.header-area{
+    --#{$prefix}border-color: var(--header-border-color);
+}
+.header-top{
+    padding-inline-start: $space-14;
+}
+.social-icons {
+    a {
+        $item-size: #{$sizes-8};
+        color: var(--social-icons-color);
+        width: $item-size;
+        height: $item-size;
+        transition: all 0.3s ease-in-out;
+        font-size: $fontSizes-sm;
+        .icon{
+            $size: 1.1em;
+            width: $size;
+            height: $size;
+        }
+        &:hover {
+            color: var(--social-icons-hover-color);
+            background-color: var(--social-icons-hover-bg);
+        }
+    }
+}
+

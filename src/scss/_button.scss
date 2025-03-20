@@ -1,0 +1,108 @@
+/* Button customization */
+.btn {
+  --#{$prefix}btn-font-size: #{$fontSizes-sm};
+  --#{$prefix}btn-line-height: 1.2;
+  --#{$prefix}btn-font-weight: 600;
+  --#{$prefix}btn-disabled-opacity: 0.4;
+  --#{$prefix}btn-box-shadow: none;
+  min-width: $sizes-8;
+  height: $sizes-8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  &-small{
+    height: $sizes-7;
+  }
+}
+
+.btn-primary {
+  --#{$prefix}btn-bg: #{$primary-500};
+  --#{$prefix}btn-border-color: #{$primary-500};
+  --#{$prefix}btn-hover-bg: #{$primary-600};
+  --#{$prefix}btn-hover-border-color: #{$primary-600};
+  --#{$prefix}btn-active-bg: #{$primary-700};
+  --#{$prefix}btn-active-border-color: #{$primary-700};
+  --#{$prefix}btn-disabled-bg: #{$primary-500};
+  --#{$prefix}btn-disabled-border-color: #{$primary-500};
+}
+.border-yellow{
+  --yellow-500: #{$yellow-500};
+  --#{$prefix}btn-border-color: #{$yellow-500};
+  --#{$prefix}btn-hover-border-color: #{$yellow-300};
+}
+
+:root, [data-bs-theme=light]{
+  .btn-light{
+    @include button-variant(
+      $colors-black,
+      $colors-black,
+      $color: color-contrast($colors-black),
+      $hover-background: $yellow,
+      $hover-border: $yellow,
+      $hover-color: color-contrast($yellow),
+      $active-background: $yellow,
+      $active-border: $yellow,
+      $active-color: color-contrast($yellow),
+      $disabled-background: $colors-black,
+      $disabled-border: $yellow,
+      $disabled-color: color-contrast($colors-black)
+    );
+  }
+  .btn-outline{
+    &-secondary{
+      @include button-outline-variant($blackAlpha-900, $color-hover: $blackAlpha-900, $active-background: $blackAlpha-300, $active-border: $blackAlpha-300, $active-color: $blackAlpha-900);
+      border: 1px solid #{$blackAlpha-400};
+    }
+  }
+  .btn-secondary {
+    --#{$prefix}btn-bg: #{$gray-100};
+    --#{$prefix}btn-border-color: #{$gray-100};
+    --#{$prefix}btn-hover-color: #{$colors-black};
+    --#{$prefix}btn-hover-bg: #{$gray-200};
+    --#{$prefix}btn-hover-border-color: #{$gray-200};
+    --#{$prefix}btn-disabled-bg: #{$gray-50};
+    --#{$prefix}btn-disabled-border-color: #{$gray-50};
+    --#{$prefix}btn-active-bg: #{$gray-300};
+    &.bg-hidden{
+      --#{$prefix}btn-bg: transparent;
+    }
+  }
+}
+@include color-mode(dark) {
+  .btn-light{
+    @include button-variant(
+      $white,
+      $white,
+      $color: color-contrast($white),
+      $hover-background: $yellow,
+      $hover-border: $yellow,
+      $hover-color: color-contrast($yellow),
+      $active-background: $yellow,
+      $active-border: $yellow,
+      $active-color: color-contrast($yellow),
+      $disabled-background: $white,
+      $disabled-border: $yellow,
+      $disabled-color: color-contrast($white)
+    );
+  }
+  .btn-outline{
+    &-secondary{
+      @include button-outline-variant($whiteAlpha-900, $color-hover: $whiteAlpha-900, $active-background: $whiteAlpha-300, $active-border: $whiteAlpha-300, $active-color: $whiteAlpha-900);
+      border: 1px solid #{$whiteAlpha-400};
+    }
+  }
+  .btn-secondary {
+    --#{$prefix}btn-bg: #{$whiteAlpha-300};
+    --#{$prefix}btn-border-color: #{$whiteAlpha-300};
+    --#{$prefix}btn-hover-color: #fff;
+    --#{$prefix}btn-hover-bg: #{$whiteAlpha-400};
+    --#{$prefix}btn-hover-border-color: #{$whiteAlpha-400};
+    --#{$prefix}btn-disabled-bg: #{$whiteAlpha-300};
+    --#{$prefix}btn-disabled-border-color: #{$whiteAlpha-300};
+    --#{$prefix}btn-active-bg: #{$whiteAlpha-500};
+    &.bg-hidden{
+      --#{$prefix}btn-bg: transparent;
+    }
+  }
+}

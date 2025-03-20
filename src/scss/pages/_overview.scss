@@ -1,0 +1,54 @@
+
+/* Overview page style */
+.cfs {
+    font-size: var(--fontSizes-md);
+}
+
+.clh {
+    line-height: 110%;
+}
+
+.clh-1-2 {
+    line-height: 1.2;
+}
+
+.cfs-sm {
+    font-size: var(--fontSizes-md);
+}
+
+.cw {
+    width: var(--sizes-8);
+    height: var(--sizes-8);
+    font-size: calc(var(--sizes-8)/2.5);
+}
+
+.cw-30 {
+    width: 30%;
+}
+
+.cw-70 {
+    width: 70%;
+}
+
+.cgrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    gap: var(--space-4);
+}
+
+.mt-125 {
+    margin-top: var(--space-1);
+}
+
+.cfs-812 {
+    font-size: var(--fontSizes-sm);
+}
+
+.chover:hover {
+    cursor: pointer;
+    border: 1px solid var(--whiteAlpha-700);
+}
+
+.ch {
+    height: 100vh;
+}

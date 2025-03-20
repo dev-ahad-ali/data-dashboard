@@ -1,0 +1,163 @@
+.bolt {
+  --bolt: #f2de10;
+  width: 126px;
+  height: 186px;
+  position: relative;
+  &.animate {
+    div {
+      &:after,
+      &:before {
+        animation: shine 1s ease;
+      }
+      span {
+        animation: morph 1s ease;
+      }
+    }
+    svg {
+      &.circle {
+        animation: circle 0.45s cubic-bezier(0.77, 0, 0.175, 1) 1.3s forwards;
+      }
+      &.line {
+        animation: line 0.45s cubic-bezier(0.77, 0, 0.175, 1) 1.3s forwards;
+      }
+      &.white {
+        animation: #fff 0.45s cubic-bezier(0.77, 0, 0.175, 1) 1.45s forwards;
+        &.right {
+          animation-delay: 0.6s;
+        }
+      }
+    }
+  }
+  svg {
+    position: absolute;
+    display: block;
+    stroke-width: 4;
+    fill: none;
+    stroke-linecap: round;
+    stroke: var(--bolt);
+    &.circle {
+      left: 7px;
+      top: 100%;
+      width: 112px;
+      height: 44px;
+      stroke-dashoffset: 179px;
+      stroke-dasharray: 0 178px;
+    }
+    &.line {
+      top: 95%;
+      width: 70px;
+      height: 3px;
+      stroke-dashoffset: 71px;
+      stroke-dasharray: 0 70px;
+      &.left {
+        --r: 130deg;
+        left: -24px;
+        transform: rotate(var(--r));
+      }
+      &.right {
+        --r: 40deg;
+        right: -24px;
+        transform: rotate(var(--r));
+      }
+    }
+    &.white {
+      top: 30%;
+      z-index: 1;
+      stroke: #fff;
+      stroke-dashoffset: 241px;
+      stroke-dasharray: 0 240px;
+      &.left {
+        --r: -20deg;
+        left: 0;
+        transform: rotate(var(--r)) scaleX(1);
+      }
+      &.right {
+        --r: 20deg;
+        --s: -1;
+        right: 0;
+        transform: rotate(var(--r)) scaleX(var(--s));
+      }
+    }
+  }
+  div {
+    display: block;
+    position: relative;
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 44%;
+    }
+    &:before {
+      width: 112px;
+      height: 112px;
+      margin: -56px 0 0 -56px;
+      background: #cdd9ed;
+      filter: blur(124px);
+    }
+    &:after {
+      width: 64px;
+      height: 64px;
+      margin: -32px 0 0 -32px;
+      background: #fff9bc;
+      z-index: 1;
+      filter: blur(60px);
+    }
+  }
+  span {
+    display: block;
+    width: 126px;
+    height: 186px;
+    background: var(--bolt);
+    -webkit-clip-path: polygon(
+      40% 0,
+      100% 0,
+      65% 40%,
+      88% 40%,
+      8% 100%,
+      36% 50%,
+      0 50%
+    );
+    clip-path: polygon(
+      40% 0,
+      100% 0,
+      65% 40%,
+      88% 40%,
+      8% 100%,
+      36% 50%,
+      0 50%
+    );
+  }
+}
+
+.static-bolt {
+  fill: none;
+  stroke: yellow;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.animated-bolt {
+  fill: none;
+  stroke: orange;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: strike 1s infinite;
+  transform-origin: center;
+}
+
+.icon-heartbeat {
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+.minus-one {
+  position: absolute;
+  animation: minusOneAnimation 0.8s ease-out forwards;
+  font-size: 20px;
+  color: red;
+  transform: translateY(0);
+  top: -20px;
+}

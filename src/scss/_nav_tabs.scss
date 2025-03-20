@@ -1,0 +1,64 @@
+.nav-tabs{
+    &:not(.theme-tabs){
+        --#{$prefix}nav-tabs-link-active-border-color: var(--nav-tabs-link-active-border-color);
+        --#{$prefix}nav-tabs-link-hover-border-color: var(--nav-tabs-link-hover-border-color);
+        border: 0;
+        .nav-item{
+            &:first-child{
+                .nav-link{
+                    border-top-left-radius: $radius-md;
+                    border-bottom-left-radius: $radius-md;
+                }
+            }
+            &:last-child{
+                .nav-link{
+                    border-top-right-radius: $radius-md;
+                    border-bottom-right-radius: $radius-md;
+                }
+            }
+        }
+        .nav-link{
+            height: $sizes-7;
+            margin-inline-end: -1px;
+        }
+    }
+    &.theme-tabs{
+        --#{$prefix}nav-tabs-link-active-color: #{$purple-300};
+        --#{$prefix}nav-tabs-link-active-border-color: #{$purple-300};
+        --#{$prefix}nav-tabs-link-hover-border-color: transparent;
+        --#{$prefix}nav-tabs-border-width: 2px;
+        .nav-link{
+            border-width: 0;
+            border-bottom-width: 2px;
+            &:not(.active){
+                border-color: transparent;
+            }
+            &.active{
+                background-color: transparent;
+            }
+            &:hover{
+                &:not(.active){
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .nav-item{
+        margin: 0;
+    }
+    .nav-link{
+        --#{$prefix}nav-link-color: var(--nav-link-color);
+        --#{$prefix}nav-link-hover-color: var(--nav-link-hover-color);
+        --#{$prefix}nav-tabs-link-active-bg: var(--nav-tabs-link-active-bg);
+        --#{$prefix}nav-tabs-link-active-color: var(--nav-tabs-link-active-color);
+        // --#{$prefix}nav-tabs-link-active-bg: transparent;
+        --#{$prefix}nav-link-padding-y: 0;
+        --#{$prefix}nav-link-padding-x: #{$space-2};
+        border-color: var(--nav-link-border-color);
+        height: $sizes-8;
+        border-radius: 0;
+        outline: transparent solid 2px;
+        outline-offset: 2px;
+        margin-inline-end: -2px;
+    }
+}

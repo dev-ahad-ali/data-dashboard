@@ -1,0 +1,20 @@
+.auth-card{
+   max-width: $sizes-md;
+}
+
+.btn-back{
+   --icon-size: .625rem;
+   color: var(--colors-muted);
+   text-decoration: none;
+   &::before{
+      content: "";
+      display: inline-block;
+      width: var(--icon-size);
+      height: var(--icon-size);
+      border-color: var(--back-icon-border-color);
+      border-width: 0 0 2px 2px;
+      border-style: solid;
+      transform: rotate(45deg);
+      margin-right: $space-2;
+   }
+}

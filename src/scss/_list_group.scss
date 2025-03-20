@@ -1,0 +1,13 @@
+.list-group{
+    --#{$prefix}list-group-border-color: var(--list-group-border-color);
+    &.no-border{
+        --#{$prefix}list-group-border-width: 0;
+    }
+    &.no-bg{
+        --#{$prefix}list-group-bg: transparent;
+    }
+    &.no-padding{
+        --#{$prefix}list-group-item-padding-x: 0;
+        --#{$prefix}list-group-item-padding-y: 0;
+    }
+}

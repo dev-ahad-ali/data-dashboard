@@ -1,0 +1,27 @@
+.highcharts-dashboards,
+.highcharts-dashboards-wrapper {
+  background-color: transparent;
+}
+.highcharts-background {
+  --highcharts-background-color: transparent;
+  // fill: transparent;
+}
+
+.highcharts-axis-line {
+  stroke: none;
+}
+
+.highcharts-grid-line {
+  --highcharts-neutral-color-10: var(--highcharts-border-color) !important;
+  stroke-dasharray: 1 1 1;
+}
+.highcharts-graph {
+  fill-opacity: 0.6;
+}
+.highcharts-credits {
+  display: none;
+}
+
+.highcharts-tooltip-box {
+  --highcharts-background-color: #{$gray-700};
+}

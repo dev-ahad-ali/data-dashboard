@@ -1,0 +1,57 @@
+.offcanvas{
+   --#{$prefix}offcanvas-width: #{$sizes-4xl};
+   --#{$prefix}offcanvas-padding-y: #{$space-2};
+   max-width: 80%;
+   &-small{
+    --bs-offcanvas-width:20rem;
+    h5{
+      color: var(--offcanvas-header-color);
+    }
+    .keyboard_shortcut{
+      p{
+        color: var(--offcanvas-paragraph-color);
+      }
+      span{
+        color: var(--offcanvas-span-color);
+        kbd{
+          color:var(--offcanvas-kbd-color);
+          background-color: var(--offcanvas-kbd-bg-color);
+        }
+      }
+    }
+   }
+}
+
+.btn-offcanvas-close{
+   position: absolute;
+    left: -20px;
+    top: 0px;
+    width: 20px;
+    height: 100%;
+    background: var(--offCanvasCloseBg);
+    transition: width 0.3s ease-out 0s, left 0.3s ease-out 0s, border-color 0.3s ease-out 0s;
+    border-top: 1px solid transparent;
+    border-left: 3px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-right-color: transparent;
+    &:hover{
+      width: 50px;
+      left: -50px;
+      cursor: pointer;
+      border-right-color: transparent;
+      border-left-color: $colors-black;
+    }
+    .icon{
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      line-height: 1em;
+      flex-shrink: 0;
+      color: var(--offCanvas-icon-colors);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+    }
+}

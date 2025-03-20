@@ -1,0 +1,17 @@
+.tooltip{
+   --#{$prefix}tooltip-color: var(--tooltip-color);
+   --#{$prefix}tooltip-bg: var(--tooltip-bg);
+   --#{$prefix}tooltip-padding-x: #{$tooltip-padding-x};
+   --#{$prefix}tooltip-padding-y: #{$tooltip-padding-y};
+   --#{$prefix}tooltip-border-radius: #{$radius-base};
+   --#{$prefix}tooltip-opacity: 1;
+   --#{$prefix}tooltip-font-size: #{$fontSizes-xs};
+   border-color: var(--tooltip-border-color);
+   border-width: 1px;
+   border-style: solid;
+   border-radius: var(--#{$prefix}tooltip-border-radius);
+   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 5px;
+   .tooltip-arrow{
+      display: none;
+   }
+}

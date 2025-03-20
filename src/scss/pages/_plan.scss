@@ -1,0 +1,29 @@
+.pricing-plane-row{
+   --#{$prefix}gutter-y: #{$space-10};
+   --#{$prefix}gutter-x: #{$space-10};
+   @include media-breakpoint-down(md) {
+      --#{$prefix}gutter-y: #{$space-4};
+      --#{$prefix}gutter-x: #{$space-4};
+   }
+}
+.pricing-plan-card{
+   --#{$prefix}card-border-color: #{$yellow};
+   padding: $space-10;
+   .plan-title{
+      color: var(--#{$prefix}card-border-color);
+   }
+   .list-group{
+      border: 0;
+   }
+   .list-group-item{
+      --#{$prefix}list-group-item-padding-y: #{$space-1-5};
+      --#{$prefix}list-group-item-padding-x: 0;
+      background: transparent;
+   }
+   .price{
+      margin-top: $space-3;
+   }
+   .btn-purchase{
+      margin-top: $space-5;
+   }
+}

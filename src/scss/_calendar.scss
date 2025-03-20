@@ -1,0 +1,101 @@
+.calendar {
+  --btn-size: 2.5rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  color: var(--calendar-color);
+  .selected-date {
+    padding-inline-start: $space-3;
+    padding-inline-end: $space-3;
+  }
+  button {
+    &.control-btn {
+      width: $sizes-8;
+      font-size: $fontSizes-xxl;
+    }
+    width: var(--btn-size);
+    height: $sizes-8;
+    border-radius: $radius-md;
+    font-size: $fontSizes-sm;
+    background-color: transparent;
+    border-width: 0px;
+    padding-inline-start: $space-3;
+    padding-inline-end: $space-3;
+    text-align: center;
+    color: var(--calendar-btn-color);
+    &:hover {
+      background-color: var(--calendar-btn-hover-bg);
+    }
+  }
+  .row {
+    --bs-gutter-x: #{$space-8};
+  }
+  .calendar-table-col {
+    min-width: calc(280px + var(--bs-gutter-x));
+  }
+  th {
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border-collapse: collapse;
+    text-align: center;
+    color: var(--colors-muted);
+    font-weight: normal;
+  }
+  th,
+  td {
+    padding: 1px 0;
+    position: relative;
+    z-index: 2;
+  }
+  [data-today] {
+    background-color: var(--calendar-today-btn-bg);
+  }
+  [aria-selected="true"] {
+    button {
+      //   position: relative;
+      &[data-selected] {
+        background-color: var(--calendar-button-selected-bg);
+        &:not([data-selection-start], [data-selection-end]) {
+          border-radius: 0;
+        }
+        &[data-selection-start],
+        &[data-selection-end] {
+          &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background-color: $primary-500;
+            border-radius: $radius-md;
+          }
+        }
+        &[data-highlighted] {
+          border-radius: 0;
+        }
+      }
+    }
+    &:first-child {
+      button {
+        &[data-selected] {
+          &:not([data-selection-start], [data-selection-end]) {
+            border-top-left-radius: $radius-md;
+            border-bottom-left-radius: $radius-md;
+          }
+        }
+      }
+    }
+    &:last-child {
+      button {
+        &[data-selected] {
+          &:not([data-selection-start], [data-selection-end]) {
+            border-top-right-radius: $radius-md;
+            border-bottom-right-radius: $radius-md;
+          }
+        }
+      }
+    }
+  }
+  [aria-disabled="true"] {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,292 @@
+:root,
+[data-bs-theme="light"] {
+  --#{$prefix}body-bg: #{$white};
+  --#{$prefix}modal-bg: #{$white};
+  --#{$prefix}body-color: #{$blackAlpha-900};
+  --#{$prefix}border-color: #{$blackAlpha-200};
+  --#{$prefix}body-link-color: #{$blackAlpha-900};
+
+  --main-container-bg: #{$gray-50};
+  --colors-muted: #{$blackAlpha-600};
+  --offCanvasCloseBg: rgb(29, 32, 37);
+  --offCanvas-icon-colors: #{$white};
+  --default-border-color: #{$blackAlpha-200};
+  --section-divider-color: var(--default-border-color);
+  --avatar-bg-primary: #9d50a9;
+
+  --social-icons-color: #{$blackAlpha-900};
+  --social-icons-hover-color: #{$blackAlpha-900};
+  --social-icons-hover-bg: #{$blackAlpha-200};
+
+  --stats-tab-border-color: var(--default-border-color);
+  --stats-tab-active-border-color: #{$primary-500};
+  --stats-tab-hover-bg: #{$whiteAlpha-100};
+  --stats-table-row-border: var(--default-border-color);
+  --stats-avatar-seperator-color: #{$gray-300};
+
+  --highcharts-border-color: rgba(204, 204, 204, 0.8);
+
+  --avatar-bg: #{$gray-400};
+  --avatar-btn-active-bg: #{$blackAlpha-200};
+  --avatar-btn-active-border-color: var(--default-border-color);
+  --nav-toggler-color: #{$blackAlpha-900};
+  --sidebar-border-color: var(--default-border-color);
+  --sidebar-devider-color: var(--default-border-color);
+  --sidebar-link-color: #{$blackAlpha-600};
+  --sidebar-link-hover-color: #{$blackAlpha-600};
+  --sidebar-link-active-color: #{$blackAlpha-900};
+  --sidebar-link-hover-bg: #{$blackAlpha-100};
+  --sidebar-link-active-bg: #{$blackAlpha-300};
+
+  --statistic-card-border-color: var(--default-border-color);
+  --card-border-color: var(--default-border-color);
+  --card-bg: #{$white};
+
+  --header-border-color: #{$gray-200};
+  --linkedin-color: #{$blue};
+  --linkedin-border-color: #{$blue};
+  --linkedin-hover-border-color: #{$blue-600};
+
+  --checkbox-border-color: var(--default-border-color);
+  --checkbox-background-color: #{$blackAlpha-400};
+  --checkbox-checked-background-color: #{$primary-500};
+  --checkbox-checked-hover-background-color: #{$primary-300};
+  --checkbox-checked-hover-border-color: #{$primary-300};
+  --checkbox-checked-border-color: #{$primary-500};
+  --checkbox-check-icon-color: #{$white};
+
+  --badge-bg-color: #{$blackAlpha-100};
+  --badge-color: #{$gray-600};
+
+  --hover-background-color: #{$blackAlpha-200};
+  --list-group-border-color: var(--default-border-color);
+
+  --nav-tabs-link-active-border-color: #{$blackAlpha-400};
+  --nav-tabs-link-hover-border-color: #{$blackAlpha-300};
+  --nav-link-border-color: #{$gray-300};
+  --nav-link-hover-color: #{$colors-black};
+  --nav-tabs-link-active-bg: #{$gray-50};
+  --nav-tabs-link-active-color: #{$colors-black};
+  --nav-link-color: #{$blackAlpha-600};
+
+  --body-link-color: #{$blackAlpha-900};
+  --body-link-hover-color: #{$colors-black};
+  --link-card-border-color: var(--default-border-color);
+  --link-card-hover-border-color: #{$blackAlpha-300};
+
+  --datae-picker-color: #{$blackAlpha-900};
+  --datae-picker-bg-color: transparent;
+  --datae-picker-hover-bg-color: #{$blackAlpha-200};
+  --datae-picker-border-color: #{$blackAlpha-400};
+  --datae-picker-hover-border-color: #{$blackAlpha-500};
+
+  --tooltip-color: #{$blackAlpha-900};
+  --tooltip-bg: #{white};
+  --tooltip-border-color: var(--default-border-color);
+
+  --dropdown-bg: #{$white};
+  --dropdown-link-hover-bg: #{$gray-100};
+  --dropdown-link-active-bg: #{$gray-100};
+  --dropdown-border-color: var(--default-border-color);
+  --dropdown-divider-color: var(--default-border-color);
+
+  --table-hover-bg: #{$blackAlpha-100};
+  --table-selected-bg: rgba(137, 82, 224, 0.1);
+  --table-selected-hover-bg: rgba(137, 82, 224, 0.2);
+  --table-border-color: #{$blackAlpha-100};
+  --table-selected-border-color: rgba(137, 82, 224, 0.2);
+  --table-header-bg: #{$white};
+  --table-header-text-color: #{$gray-600};
+  --table-lead-name-color: #{$blackAlpha-900};
+  --status-banner-bg: #{$gray-300};
+  --avatar-text-color: #{$white};
+
+  --search-box-border-color: #{$blackAlpha-300};
+  --search-box-hover-border-color: #{$blackAlpha-400};
+  --password-toggle-btn-color: #{$colors-black};
+  --modal-close-btn-color: #{$colors-black};
+  --form-control-hover-border-color: #{$blackAlpha-400};
+  --input-placeholder-color: #{$gray-500};
+  --back-icon-border-color: #{$blackAlpha-600};
+
+  --toggle-property-button-border-color: #{$gray-200};
+  --toggle-property-button-hover-border-color: #{$gray-300};
+  --toggle-property-button-color: var(--colors-muted);
+  --toggle-property-button-active-color: #{$blackAlpha-900};
+  --toggle-property-button-hover-bg: #{$gray-300};
+  --toggle-property-button-active-bg: #{$whiteAlpha-200};
+
+  --calendar-color: #{$blackAlpha-900};
+  --calendar-btn-color: #{$blackAlpha-900};
+  --calendar-btn-hover-bg: #{$blackAlpha-200};
+  --calendar-today-btn-bg: #{$blackAlpha-50};
+  --calendar-button-selected-bg: rgba(163, 121, 231, 0.2);
+
+  --tabpen-table-td-color: #{$blackAlpha-900};
+  --tabpen-table-th-color: #{$gray-600};
+  --tabpen-button-bg-color: #{$gray-100};
+  --tabpen-button-bg-hover-color: #{$gray-200};
+  --switch-check-bg-color: #{$gray-300};
+
+  --close-btn-hover-color: #{$blackAlpha-100};
+  --offcanvas-header-color: #{$blackAlpha-900};
+  --offcanvas-paragraph-color: #{$blackAlpha-800};
+  --offcanvas-span-color: #{$blackAlpha-800};
+  --offcanvas-kbd-color: #{$blackAlpha-700};
+  --offcanvas-kbd-bg-color: #{$blackAlpha-200};
+
+  path {
+    &[fill="#FFFFFF"] {
+      fill: #8c52ff;
+    }
+    &[fill="#8C52FF"] {
+      fill: #000000;
+    }
+  }
+}
+
+[data-bs-theme="dark"] {
+  --#{$prefix}dark-rgb: 23, 26, 29;
+  --#{$prefix}body-bg: #{$gray-700};
+  --#{$prefix}modal-bg: #{$gray-700};
+  --#{$prefix}border-color: #{$whiteAlpha-200};
+  --#{$prefix}body-color: #{$whiteAlpha-900};
+  --#{$prefix}body-link-color: #{$whiteAlpha-900};
+
+  --main-container-bg: transparent;
+  --colors-muted: #{$whiteAlpha-700};
+  --offCanvasCloseBg: rgb(29, 32, 37);
+  --offCanvas-icon-colors: #{$white};
+  --default-border-color: #{$whiteAlpha-200};
+  --section-divider-color: var(--default-border-color);
+  --avatar-bg-primary: #9d50a9;
+
+  --social-icons-color: #{$whiteAlpha-900};
+  --social-icons-hover-color: #{$whiteAlpha-900};
+  --social-icons-hover-bg: #{$whiteAlpha-200};
+
+  --stats-tab-border-color: var(--default-border-color);
+  --stats-tab-active-border-color: #{$primary-500};
+  --stats-tab-hover-bg: #{$whiteAlpha-100};
+  --stats-table-row-border: #{$whiteAlpha-100};
+  --stats-avatar-seperator-color: #{$gray-600};
+
+  --highcharts-border-color: rgba(204, 204, 204, 0.3);
+
+  --avatar-bg: #{$gray-400};
+  --avatar-btn-active-bg: #{$whiteAlpha-200};
+  --avatar-btn-active-border-color: var(--default-border-color);
+  --nav-toggler-color: #{$whiteAlpha-900};
+  --sidebar-border-color: var(--default-border-color);
+  --sidebar-devider-color: var(--default-border-color);
+  --sidebar-link-color: #{$whiteAlpha-700};
+  --sidebar-link-hover-color: #{$whiteAlpha-700};
+  --sidebar-link-active-color: #{$whiteAlpha-900};
+  --sidebar-link-hover-bg: #{$whiteAlpha-200};
+  --sidebar-link-active-bg: #{$whiteAlpha-300};
+
+  --statistic-card-border-color: #{$whiteAlpha-50};
+  --card-border-color: var(--default-border-color);
+  --card-bg: #{$gray-800};
+
+  --header-border-color: var(--default-border-color);
+  --linkedin-color: #{$blue-200};
+  --linkedin-border-color: #{$blue-200};
+  --linkedin-hover-border-color: #{$blue-600};
+
+  --checkbox-border-color: #{$whiteAlpha-100};
+  --checkbox-background-color: #{$whiteAlpha-400};
+  --checkbox-checked-background-color: #{$primary-500};
+  --checkbox-checked-hover-background-color: #{$primary-300};
+  --checkbox-checked-hover-border-color: #{$primary-300};
+  --checkbox-checked-border-color: #{$primary-500};
+  --checkbox-check-icon-color: #{$white};
+
+  --badge-bg-color: #{$whiteAlpha-100};
+  --badge-color: #{$gray-400};
+
+  --hover-background-color: #{$whiteAlpha-200};
+  --list-group-border-color: var(--default-border-color);
+
+  --nav-tabs-link-active-border-color: #{$whiteAlpha-400};
+  --nav-tabs-link-hover-border-color: #{$whiteAlpha-300};
+  --nav-link-border-color: #{$whiteAlpha-300};
+  --nav-link-hover-color: #{$white};
+  --nav-tabs-link-active-bg: #{$whiteAlpha-50};
+  --nav-tabs-link-active-color: #{$white};
+  --nav-link-color: #{$whiteAlpha-700};
+
+  --body-link-color: #{$whiteAlpha-900};
+  --body-link-hover-color: #{$white};
+  --link-card-border-color: #{whiteAlpha-300};
+  --link-card-hover-border-color: #{whiteAlpha-400};
+
+  --datae-picker-color: #{whiteAlpha-900};
+  --datae-picker-bg-color: transparent;
+  --datae-picker-hover-bg-color: #{$whiteAlpha-200};
+  --datae-picker-border-color: #{$whiteAlpha-400};
+  --datae-picker-hover-border-color: #{$whiteAlpha-500};
+
+  --tooltip-color: #{$whiteAlpha-900};
+  --tooltip-bg: #{$gray-700};
+  --tooltip-border-color: var(--default-border-color);
+
+  --dropdown-bg: #{$gray-700};
+  --dropdown-link-hover-bg: #{$whiteAlpha-100};
+  --dropdown-link-active-bg: #{$whiteAlpha-100};
+  --dropdown-border-color: #{$whiteAlpha-300};
+  --dropdown-divider-color: var(--default-border-color);
+
+  --table-hover-bg: #{$whiteAlpha-50};
+  --table-selected-bg: rgba(137, 82, 224, 0.1);
+  --table-selected-hover-bg: rgba(137, 82, 224, 0.2);
+  --table-border-color: #{$whiteAlpha-100};
+  --table-selected-border-color: rgba(137, 82, 224, 0.2);
+  --table-header-bg: #{$gray-900};
+  --table-header-text-color: #{$gray-400};
+  --table-lead-name-color: #{$whiteAlpha-900};
+  --status-banner-bg: #{$gray-700};
+  --avatar-text-color: #{$white};
+
+  --search-box-border-color: #{$whiteAlpha-300};
+  --search-box-hover-border-color: #{$whiteAlpha-400};
+  --password-toggle-btn-color: #{$white};
+  --modal-close-btn-color: #{$white};
+  --form-control-hover-border-color: #{$whiteAlpha-300};
+  --input-placeholder-color: #{$whiteAlpha-600};
+  --back-icon-border-color: #{$whiteAlpha-700};
+
+  --toggle-property-button-border-color: #{$whiteAlpha-400};
+  --toggle-property-button-hover-border-color: #{$whiteAlpha-500};
+  --toggle-property-button-color: var(--colors-muted);
+  --toggle-property-button-active-color: #{$whiteAlpha-900};
+  --toggle-property-button-hover-bg: #{$whiteAlpha-200};
+  --toggle-property-button-active-bg: #{$whiteAlpha-200};
+
+  --calendar-color: #{$whiteAlpha-900};
+  --calendar-btn-color: #{$whiteAlpha-900};
+  --calendar-btn-hover-bg: #{$whiteAlpha-200};
+  --calendar-today-btn-bg: #{$whiteAlpha-50};
+  --calendar-button-selected-bg: rgba(163, 121, 231, 0.2);
+
+  --tabpen-table-td-color: #{$whiteAlpha-600};
+  --tabpen-table-th-color: #{$gray-900};
+  --tabpen-button-bg-color: #{$gray-100};
+  --tabpen-button-bg-hover-color: #{$gray-200};
+  --switch-check-bg-color: #{$whiteAlpha-400};
+  --close-btn-hover-color: #{$whiteAlpha-100};
+  --offcanvas-header-color: #{$whiteAlpha-600};
+  --offcanvas-paragraph-color: #{$whiteAlpha-600};
+  --offcanvas-span-color: #{$whiteAlpha-600};
+  --offcanvas-kbd-color: #{$whiteAlpha-700};
+  --offcanvas-kbd-bg-color: #{$whiteAlpha-200};
+
+  path {
+    &[fill="#FFFFFF"] {
+      fill: #ffffff;
+    }
+    &[fill="#8C52FF"] {
+      fill: #8c52ff;
+    }
+  }
+}

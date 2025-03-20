@@ -1,0 +1,30 @@
+html {
+  touch-action: manipulation;
+}
+html,
+body {
+  min-width: 320px;
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  $text-rendering: optimizelegibility;
+  font-feature-settings: "kern";
+  --#{$prefix}body-font-size: #{$fontSizes-sm};
+  overflow: hidden;
+}
+
+a {
+  --#{$prefix}link-color-rgb: var(--body-link-color);
+  &:hover {
+    --#{$prefix}link-color-rgb: var(--body-link-hover-color);
+  }
+}
+
+/* Main content area */
+.main-content {
+  height: calc(100vh - 102px);
+  padding-bottom: $space-6;
+  background-color: var(--main-container-bg);
+}

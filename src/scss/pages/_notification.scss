@@ -1,0 +1,16 @@
+.list-group-item{
+ h2{
+   font-size: $fontSizes-md;
+ }  
+ .heading{
+   color: $gray-400;
+}
+}
+
+.notification-widget-card{
+   .list-group{
+      &-item{
+         --#{$prefix}list-group-item-padding-y: #{$space-2};
+      }
+   }
+}

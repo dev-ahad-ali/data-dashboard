@@ -1,0 +1,181 @@
+/* Keyframe animation */
+@keyframes drawPath {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillColor {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: $fill-color;
+  }
+}
+
+@keyframes animation-fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes strike {
+  0% {
+    stroke-dashoffset: 1000;
+    fill: yellow;
+    transform: translateY(-0.5px) scale(1.1, 0.9);
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: orange;
+    transform: translateY(0.5px) rotate(5deg) scale(0.9, 1.1);
+  }
+}
+
+@keyframes circle {
+  to {
+    stroke-dasharray: 178px 178px;
+  }
+}
+
+@keyframes white {
+  to {
+    stroke-dasharray: 240px 240px;
+  }
+}
+
+@keyframes line {
+  to {
+    stroke-dasharray: 70px 70px;
+  }
+}
+
+@keyframes shine {
+  30%,
+  70% {
+    opacity: 0;
+  }
+}
+
+@keyframes morph {
+  12% {
+    -webkit-clip-path: polygon(
+      40% 5%,
+      100% 0,
+      65% 40%,
+      65% 40%,
+      8% 100%,
+      24% 50%,
+      24% 50%
+    );
+    clip-path: polygon(
+      40% 5%,
+      100% 0,
+      65% 40%,
+      65% 40%,
+      8% 100%,
+      24% 50%,
+      24% 50%
+    );
+  }
+
+  24%,
+  72% {
+    -webkit-clip-path: polygon(
+      36% 40%,
+      82% 40%,
+      82% 40%,
+      82% 40%,
+      36% 71%,
+      36% 40%,
+      36% 40%
+    );
+    clip-path: polygon(
+      36% 40%,
+      82% 40%,
+      82% 40%,
+      82% 40%,
+      36% 71%,
+      36% 40%,
+      36% 40%
+    );
+  }
+
+  84% {
+    -webkit-clip-path: polygon(
+      40% 5%,
+      100% 0,
+      65% 40%,
+      65% 40%,
+      8% 100%,
+      24% 50%,
+      24% 50%
+    );
+    clip-path: polygon(
+      40% 5%,
+      100% 0,
+      65% 40%,
+      65% 40%,
+      8% 100%,
+      24% 50%,
+      24% 50%
+    );
+  }
+}
+
+@keyframes borderColorRotation {
+  0% {
+    border-color: hsla(0, 0%, 100%, 0.16);
+  }
+
+  50% {
+    border-color: #edf707d1;
+  }
+
+  to {
+    border-color: hsla(0, 0%, 100%, 0.16);
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  to {
+    transform: scale(1);
+    color: gold;
+  }
+
+  50% {
+    transform: scale(1.1);
+    color: orange;
+  }
+}
+
+@keyframes minusOneAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

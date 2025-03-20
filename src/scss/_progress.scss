@@ -1,0 +1,5 @@
+.progress{
+    --#{$prefix}progress-height: #{$sizes-1};
+    --#{$prefix}progress-bg: #{$whiteAlpha-300};
+    --#{$prefix}progress-bar-bg: #{$primary-500};
+}
